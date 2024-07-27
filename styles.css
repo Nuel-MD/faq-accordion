@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* Background setup */
+body {
+    
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+     background-image: url("./assets/images/background-pattern-desktop.svg");
+     background-color: hsl(275, 100%, 97%);
+     height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 150px;
+    padding-bottom: 100px;
+    
+}
+
+  
+  .centered-div {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 75px;
+    grid-template-rows: 100px 75px auto 75px auto 75px auto 75px auto;
+    max-width: 500px;
+    min-width: 300px;
+    gap: 10px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px;
+    border-radius: 10px;
+    
+  }
+  
+  /* Center the content inside centered-div */
+  flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the svg to fit the 75px height rows */
+  .flex-item-fixed svg {
+    height: 75px;
+  }
+  
+  /* Style h2 elements to span 1fr and 2fr */
+  h2:hover {
+    color:rgb(110, 46, 110);
+    cursor: pointer;
+    ;
+  }
+  
+  /* Style p elements to span all three columns */
+
+.one {
+    grid-area: 1/1/2/2 ;
+    margin-left: 25px;
+    padding-top: 20px;
+}
+.two {
+    grid-area: 1/2/2/3;
+}
+.three {
+    grid-area: 2/1/3/3;
+}
+.four {
+    grid-area: 2/3/3/-1;
+}
+.five {
+    grid-area: 3/1/4/-1;
+}
+.six {
+    grid-area: 4/1/5/3;
+}
+.seven {
+    grid-area: 4/3/5/-1;
+}
+.eight {
+    grid-area: 5/1/6/-1;
+}
+.nine {
+    grid-area: 6/1/7/3;
+}
+.ten {
+    grid-area:  6/3/7/-1;
+}
+.eleven {
+    grid-area: 7/1/8/-1;
+}
+.twelve {
+    grid-area: 8/1/9/3;
+}
+.thirteen {
+    grid-area: 8/3/9/-1;
+}
+.fourteen {
+    grid-area: 9/1/10/-1;
+}
+
+svg {
+    padding-top: 20px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+@media (max-width: 440px){
+    .centered-div {
+        display: grid;
+        grid-template-columns: 0.1fr 2fr 50px;
+        grid-template-rows: 70px auto auto auto auto auto auto auto auto;
+        max-width: 500px;
+        min-width: 300px;
+        gap: 10px;
+        background-color: hsl(0, 0%, 100%);
+        padding: 25px;
+        border-radius: 10px;
+        
+      }
+}
+
+
